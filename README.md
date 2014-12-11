@@ -1,9 +1,11 @@
 1. vagrant global-status -> to get docker host VM id
 ce33d79  default     virtualbox running   /Users/mwang/.vagrant.d/data/docker-host
+
 2. vagrant ssh ce33d79 -> to getin docker Host 
+
 3. ssh -i insecure_key root@<IP>
 
-➜  test  vssh ce33d79
+➜  test $ vssh ce33d79
                         ##        .
                   ## ## ##       ==
                ## ## ## ##      ===
@@ -56,4 +58,14 @@ end
 5. Run
 
 vagrant up --provider=docker
+
+6. On Mac OS X
+
+will hang on     default: Container created: 7f06f900d6b34d5c
+==> default: Starting container...
+==> default: Waiting for machine to boot. This may take a few minutes...
+
+you can use CTRL-C to break the connection, but the VM is running already.
+
+PS. will add vagrant account to resolve this problem.
 
