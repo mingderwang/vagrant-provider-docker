@@ -1,3 +1,7 @@
+System Requirement: Vagrant 1.6.5 or above
+
+
+
 1. vagrant global-status -> to get docker host VM id
 ce33d79  default     virtualbox running   /Users/mwang/.vagrant.d/data/docker-host
 
